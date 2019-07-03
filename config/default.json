@@ -1,0 +1,9 @@
+{
+    "mongoURI": "mongodb+srv://James123:James123@devconnector-cosrr.mongodb.net/stocks?retryWrites=true&w=majority",
+    "secret": "sk_8b7f58173b6647e4896a613af9b6b06f",
+    "publishable": "pk_31c54df912564f0792f62ebd753096de"
+}
+
+// https://cloud.iexapis.com/stable/stock/aapl/batch?types=quote,news,chart&range=1m&last=1
+
+// https://cloud.iexapis.com/stable/stock/market/batch?symbols=aapl,msft&types=quote&filter=latestPrice&token=${secret}
