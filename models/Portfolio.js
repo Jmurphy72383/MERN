@@ -20,16 +20,16 @@ const PortfolioSchema = new Schema({
         required: true
     },
     buyPrice: {
-        type: mongoose.Decimal128
+        type: Number
     },
     currentPrice: {
-        type: mongoose.Decimal128
+        type: Number
     },
     totalInvested: {
-        type: mongoose.Decimal128
+        type: Number
     },
     netTotal: {
-        type: mongoose.Decimal128,
+        type: Number,
         default: 0
     }
 

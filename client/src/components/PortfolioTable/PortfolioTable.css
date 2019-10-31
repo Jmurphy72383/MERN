@@ -1,0 +1,104 @@
+.td-center {
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+}
+
+td {
+    font-size: 15px;
+    padding: 2px;
+}
+
+.net-pos {
+    color: lightgreen;
+    text-align: center;
+}
+
+.net-neg {
+    color: red;
+    text-align: center;
+}
+
+.color-grn {
+    color: green;
+    z-index: -1;
+}
+
+.update-icon {
+    z-index: -1;
+    position: relative;
+}
+
+/* .port-table {
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+.port-table-div {
+    overflow-y: scroll;
+} */
+
+
+.port-table {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.port-table-div {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/* ::-webkit-scrollbar {
+    display:none;
+} */
+
+.port-btn:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.port-btn {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 3px 5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+@media (max-width:1050px) {
+    .remove {
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    th {
+        font-size: 15px;
+        padding: 7px;
+    }
+    
+    td {
+        font-size: 15px;
+        padding: 2px;
+    }
+}
+
+@media (max-width:575px) {
+    th {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    td {
+        font-size: 12px;
+        padding: 2px 0px;
+    }
+}

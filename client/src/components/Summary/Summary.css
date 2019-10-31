@@ -1,0 +1,92 @@
+/* .summ-item {
+    border: 3px solid black;
+} */
+
+.summ-container {
+    display: grid;
+    background-color: rgba(39, 28, 109, 0.6);
+    height: 100%;
+    /* margin-top: 70px; */
+    /* width: 98vw;
+    height: 88vh; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 3fr;
+    grid-gap: 2rem;
+    grid-template-areas: 
+        "title title title title"
+        "total totalNet best worst";
+}
+
+.title {
+    grid-area: title;
+}
+
+.total {
+    grid-area: total;
+}
+
+.totalNet {
+    grid-area: totalNet;
+}
+
+.best {
+    grid-area: best;
+}
+
+.worst {
+    grid-area: worst;
+}
+
+.lifetime {
+    grid-area: lifetime;
+}
+
+
+.summ-item, h2, h3, p {
+    text-align: center;
+}
+
+.summ-item {
+    margin: 0;
+}
+
+/* .summ-h2 {
+    margin-top: -15px;
+} */
+
+.sh3 {
+    text-decoration-line: none;
+    font-size: 20px;
+}
+
+.summ-item p {
+    font-size: 18px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.crimson {
+    color: #ff0000;
+}
+
+@media (max-width: 1050px) {
+    .summ-container {
+        grid-gap: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .summ-container {
+        grid-gap: .5rem;
+    }
+
+    .sh3 {
+        font-size: 15px;
+    }
+
+    .summ-item p {
+        font-size: 14px;
+    }
+}

@@ -1,18 +1,4 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-  background-image: url('./img/headline.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+    box-sizing: border-box;
+    
 }
-
-
-
-

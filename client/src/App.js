@@ -1,24 +1,29 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Landing from './components/layout/Landing';
-import Dashboard from './components/Dashboard';
-import 'typeface-roboto';
+import Navbar from './components/layout/Navbar/Navbar';
+import Landing from './components/layout/Landing/Landing';
+import Nasdaq from './pages/Nasdaq/Nasdaq';
+import Nyse from './pages/Nyse/Nyse';
+// import Portfolio from './pages/Portfolio/Portfolio';
+import Portfolio1 from './pages/Portfolio/Portfolio1';
 import './App.css';
 
-const App = () => {
+function App() {
+
+  
+
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <Route exact path="/" component={Landing} />
-        <Switch>
-          <Route exact path="/dashboard" component={Dashboard} />
-        </Switch>
-      </Fragment>
-    </Router>
-      
-    
+      <Router>
+        <Fragment>
+          <Navbar />
+          <Route exact path="/" component={Landing} />
+          <Switch>
+            <Route exact path="/nasdaq" component={Nasdaq} />
+            <Route exact path="/nyse" component={Nyse} />
+            <Route exact path="/portfolio" component={Portfolio1} />
+          </Switch>
+        </Fragment>
+      </Router>
   );
 }
 

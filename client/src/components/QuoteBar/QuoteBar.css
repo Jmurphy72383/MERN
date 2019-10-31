@@ -1,0 +1,43 @@
+.quote-container {
+    width: 100%;
+    height: 99%;
+    background-color:rgba(107, 101, 101, 0.8);
+}
+
+.quote-h2 {
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.quote-div {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.quote-div > h3 {
+    font-size: 17px;
+}
+
+@media (max-width: 1175px) {
+    .quote-div > h3 {
+        font-size: 14px;
+    }
+
+    .quote-div {
+        margin-top: 22px;
+    }
+}
+
+/* @media (max-width: 950px) {
+    .quote-div > h3 {
+        font-size: 11px;
+    }
+
+    .quote-div {
+        line-height: 3;
+    }
+} */

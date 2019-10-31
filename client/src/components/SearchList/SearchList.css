@@ -1,0 +1,68 @@
+.list-div, input, button {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.list-div button {
+    background-color: azure;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.search-input {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.allBtn {
+    margin-top: 8px;
+}
+
+.btnfnt {
+    font-size: 14px;
+}
+
+@media (max-width: 1190px) {
+    .search-input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .btnfnt {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1035px) {
+    .search-input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    .search-input {
+        font-size: 10px;
+    }
+    .btnfnt {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-input {
+        display: none;
+    }
+
+    #sbtn {
+        display: none;
+    }
+}

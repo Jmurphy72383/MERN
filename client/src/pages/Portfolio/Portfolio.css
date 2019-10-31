@@ -1,0 +1,96 @@
+.grid-container {
+    display: grid;
+    margin-top: 70px;
+    width: 98vw;
+    height: 88vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3fr 7fr;
+    grid-gap: .25rem;
+    grid-template-areas: 
+        "port-chart port-chart port-chart port-chart port-chart"
+        "portfolio portfolio portfolio portfolio portfolio";
+    overflow: hidden;
+}
+
+.port-header {
+    grid-area: header;
+}
+
+.portfolio {
+    grid-area: portfolio;
+}
+
+.port-chart {
+    grid-area: port-chart;
+}
+
+/* .item {
+    background-color: #1EAAFC;
+    background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+    box-shadow: 0 10px 20px rgba(90, 36, 36, 0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #ffffff;
+    border-radius: 4px;
+    border: 6px solid #171717;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+} */
+
+/* .port-header-item {
+    background-color: #1EAAFC;
+    background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+    box-shadow: 0 10px 20px rgba(90, 36, 36, 0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #ffffff;
+    border-radius: 4px;
+    border: 6px solid #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+} */
+
+.port-item {
+    /* background-color: #1EAAFC;
+    background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%); */
+    /* box-shadow: 0 10px 20px rgba(90, 36, 36, 0.19), 0 6px 6px rgba(0,0,0,0.23); */
+    color: #ffffff;
+    /* border-radius: 4px;
+    border: 6px solid #171717; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.port-summ {
+    color: #ffffff;
+    background-image: url('../../img/BITCOIN.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border-radius: 4px;
+    border: 6px solid #171717;
+    display: flex;
+    justify-content: center;
+    align-items: start; */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.port-item h2 {
+    display: block;
+}
+
+@media (max-width:755px) {
+    
+}

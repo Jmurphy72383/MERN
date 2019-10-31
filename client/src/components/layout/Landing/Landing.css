@@ -1,0 +1,165 @@
+
+.landing-container {
+    display: grid;
+    width: 98vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 5fr 1fr;
+    grid-gap: 2rem;
+    grid-template-areas:
+        "filler filler filler"
+        "header header header"
+        "news stocks port"
+        "footer footer footer";
+  }
+  
+  .landing-header {
+    grid-area: header;
+  }
+  
+  .landing-news {
+    grid-area: news;
+    background-image: url('../../../img/news.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .landing-stocks {
+    grid-area: stocks;
+    background-image: url('../../../img/quote.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .landing-port {
+    grid-area: port;
+    background-image: url('../../../img/portfolio.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .landing-footer {
+    grid-area: footer;
+  }
+  
+  .landing-item {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #ffffff;
+    border-radius: 4px;
+    border: 6px solid #171717;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.landing-item-header {
+    display: block;
+    position: relative;
+}
+
+.landing-item-header::after {
+    content: "";
+    background-image: url(../../../img/BITCOIN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.heading-wrapper {
+    width: 100%;
+    background-color: rgba(241, 238, 238, .3);
+    margin-top: 10%;
+}
+
+.landing-h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.landing-h2 {
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.landing-h3 {
+    color: white;
+    text-align: left;
+    margin-left: 45px;
+    /* font-style: italic; */
+}
+
+@media (max-width: 1300px) {
+    .landing-container {
+        width: 97vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing-h2 {
+        font-size: 35px;
+        color: white;
+        text-shadow: -6px -2px 4px rgba(0,0,0,0.85);
+    }
+}
+
+@media (max-width: 1100px) {
+    .landing-h2 {
+        font-size: 30px;
+    }
+
+    .landing-container {
+        grid-gap: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .landing-container {
+        width: 96vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .landing-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+            "filler"
+            "header"
+            "news"
+            "stocks"
+            "port"
+            ;
+      }
+}
+
+@media (max-width: 600px) {
+    .landing-container {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .landing-container {
+        width: 94vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr 4fr 4fr 4fr 1fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+            "filler"
+            "header"
+            "news"
+            "stocks"
+            "port"
+            "footer";
+    }
+}

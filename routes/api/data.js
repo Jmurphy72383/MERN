@@ -6,30 +6,30 @@ const config = require('config');
 
 //@ Get request for Uber
 //Default for NYSE page
-router.get('/uber', (req, res) => {
-    try {
-        const options = {
-            // uri: `https://cloud.iexapis.com/stable/stock/market/batch?symbols=uber&types=quote,news,chart&token=sk_8b7f58173b6647e4896a613af9b6b06f`,
-            uri: `https://cloud.iexapis.com/stable/stock/market/batch?symbols=uber&types=quote,news,chart&token=${config.get('secret')}`,
-            method: 'GET',
-            headers: { 'user-agent': 'node.js'}
-        };
+// router.get('/uber', (req, res) => {
+//     try {
+//         const options = {
+//             // uri: `https://cloud.iexapis.com/stable/stock/market/batch?symbols=uber&types=quote,news,chart&token=sk_8b7f58173b6647e4896a613af9b6b06f`,
+//             uri: `https://cloud.iexapis.com/stable/stock/market/batch?symbols=uber&types=quote,news,chart&token=${config.get('secret')}`,
+//             method: 'GET',
+//             headers: { 'user-agent': 'node.js'}
+//         };
 
-        request(options, (error, response, body) => {
-            if(error) console.error(error);
+//         request(options, (error, response, body) => {
+//             if(error) console.error(error);
 
-            if(response.statusCode !== 200) {
-                return res.status(404).json({ msg: 'Stock not found'});
-            }
+//             if(response.statusCode !== 200) {
+//                 return res.status(404).json({ msg: 'Stock not found'});
+//             }
 
-            res.json(JSON.parse(body));
-        });
+//             res.json(JSON.parse(body));
+//         });
         
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).send('Server Error');
-    }
-});
+//     } catch (err) {
+//         console.error(err.message);
+//         res.status(500).send('Server Error');
+//     }
+// });
 
 //@ Get request for Amazon
 //Default for Nasdaq page
@@ -88,7 +88,7 @@ router.get('/:stock', (req, res) => {
 router.get('/', (req, res) => {
     try {
         const options = {
-            uri:`https://cloud.iexapis.com/v1/stock/market/batch?symbols=uber,amzn,nflx,twtr&types=quote&filter=latestPrice,open&token=${config.get('secret')}`,
+            uri:`https://cloud.iexapis.com/v1/stock/market/batch?symbols=aapl,amzn,nflx,twtr,fb,msft&types=quote&filter=latestPrice,change&token=${config.get('secret')}`,
             method: 'GET',
             headers: { 'user-agent': 'node.js'}
         };
@@ -108,6 +108,31 @@ router.get('/', (req, res) => {
         res.status(500).send('Server Error');
     }
 });
+
+// //@ GET request for NYSE home page stocks
+// router.get('/nyse/', (req, res) => {
+//     try {
+//         const options = {
+//             uri:`https://cloud.iexapis.com/v1/stock/market/batch?symbols=aapl,bac,nflx,twtr,fb,msft&types=quote&filter=latestPrice,change&token=${config.get('secret')}`,
+//             method: 'GET',
+//             headers: { 'user-agent': 'node.js'}
+//         };
+
+//         request(options, (error, response, body) => {
+//             if(error) console.error(error);
+
+//             if(response.statusCode !== 200) {
+//                 return res.status(404).json({ msg: 'Stocks not found'});
+//             }
+
+//             res.json(JSON.parse(body));
+//         });
+        
+//     } catch (err) {
+//         console.error(err.message);
+//         res.status(500).send('Server Error');
+//     }
+// });
 
 
 

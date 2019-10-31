@@ -1,0 +1,104 @@
+.stock-tbody {
+    text-align: left;
+}
+
+.stock-list {
+    background-color: rgba(255, 255, 255);
+}
+
+.stock-thead {
+    text-align: left;
+}
+
+.cname {
+    padding-left: 30px;
+}
+
+.table-btn {
+    margin-left: 7px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+th {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+thead, th {
+    position: sticky;
+    top: 0;
+    background-color: #1EAAFC;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.table-div {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+tr:hover {
+    background-color: #668cff;
+}
+
+.table-btn:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .cname {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .cname {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cname {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cname {
+        display: none;
+    }
+
+    .stock-list {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .table-btn {
+        background-color: blue;
+        color: white;
+        outline: none;
+        border: none;
+        padding: 5px;
+        width: 90%;
+    }
+
+    tr {
+        margin: 0 auto;
+    }
+
+}
