@@ -127,7 +127,7 @@ const Nyse = () => {
 
     const getDefaultStock = async () => {
         let res = await axios.get('/api/data/xom');
-        //console.log(res);
+        console.log(res);
         //Pulls the Key:Value pairs from the res and stores them in dates
         const dates = Object.values(res.data.XOM.chart);
         const dateArray = [];
